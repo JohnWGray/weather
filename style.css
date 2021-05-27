@@ -1,0 +1,84 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: .1em .1em 0 rgba(0, 0, 0, 0.3);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url("images/street.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    
+    margin: 0 auto;
+    font-size: 2.2em;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    
+}
+
+.top {
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    
+}
+
+.humidity-section {
+    display: flex;
+    flex-direction: column;
+}
+#humidity {
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    
+    display: flex;
+}
+
+#humidity-text {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+}
+
+
+.windspeed-section {
+    display: flex;
+    flex-direction: column;
+}
+#windspeed {
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    border-color: rgb(245, 9, 9);
+    display: flex;
+}
+
+#windspeed-text {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+}

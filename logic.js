@@ -1,9 +1,10 @@
 
 // Function to get weather data, it still needs to be called below using the parameters. 
 function getWeather(cityID) {
-    // set 'key' to unique api key
 
+    // set 'key' to unique api key
     var key = 'd273bb3ae5daaea83894281c8ce84812';
+
     /*Using fetch with specific format given by openweathermap depending on search criteria.
     'cityID' and 'key' are parmeters that are inserted down below.*/
 
@@ -13,6 +14,7 @@ function getWeather(cityID) {
         // The 'resp' could be named anything, but is a 'Response' object regardless. 
         /* Once we got the data, log it, (Because I want to see it)
         also call the 'drawWeather' function using the 'data' as the parameter. 
+        drawWeather is what is used to access parts of the fetched data. Specifically the 'data' via 'd'
         */
         .then(function (resp) { return resp.json() }) // Convert data to json
         .then(function (data) {
@@ -25,10 +27,13 @@ function getWeather(cityID) {
         });
 }
 
-// Create the drawWeather() function with 1 perameter which is 'd'
 
-/* Since OWM temp is in celcius, we make a farahenheit var and 
-set it to it, and the parameter(d in this case), then access the 'main' section, 
+
+/* 
+1: Create the drawWeather() function with 1 perameter which is 'd'
+
+ 2: Since OWM temp is in celcius, we make a farahenheit var and set it to it, 
+ and the parameter(d in this case), then accesses the 'main' section, 
 from 'main' we want 'temp'. Then we do some fancy math to it. 
 
 The 'parse' part simply converts the info into a string, if it can.
